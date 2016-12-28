@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Changelog</title>
+
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<style>
+			body{
+				background-color:#221947;
+			}
+
+			#wrapper{
+				height:100%;
+				width:70%;
+				margin:0 auto;
+				background-color:#ffffff;
+				text-align:left;
+				padding:1em;
+			}
+			
+			#content {
+				width:70%;
+				float:left;
+			}
+			
+			#sidebar {
+				width:25%;
+				border:1px solid #000000;
+				float:right;
+				padding:1em;
+			}
+			
+			#bottom {
+				clear:both;
+				width:100%;
+				height:1px;
+			}
+			
+		</style>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-88005348-1', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<h1>Changelog</h1>
+				<h2>To do</h2>
+				<ul>
+					<li>Add +10 to buy buildings in temple build minigame</li>
+					<li>Naming the ocean and change the name as it fills up</li>
+					<li>Cloud sound lags for some players</li>
+					<li>Game uses to much cpu.</li>
+					<li>Cross origin request blocked in firefox: need to look in to that</li>
+				</ul>
+				<h2>V. 0.1.13 beta</h2>
+				<ul>
+					<li>Added a weather station as a know how perk that clicks clouds automaticly. It starts with 20% of the clouds and can be upgraded to 100%</li>
+					<li>Added extra alien tech upgrades for other helpers.</li>
+					<li>Tooltips of helpers and upgrades don't go off the bottom of the page anymore.</li>
+					<li>Ocean level numeric milestone upgrades can be clicked in succession now.</li>
+					<li>Double checked everywhere number of drops in bank changes and made sure it can't go negative.</li>
+				</ul>
+				<h2>V. 0.1.12 beta</h2>
+				<ul>
+					<li>Fixed possible stacking of discount prayers for upgrades.</li>
+					<li>Changed use of jquery style calls each game tick. Makes the game more performant.</li>
+					<li>Changed Helper and Upgrade style calls. Makes the game more performant.</li>
+					<li>Put clickstorm in it's own function.</li>
+				</ul>
+				<h2>V. 0.1.11 beta</h2>
+				<ul>
+					<li>Fixed problem with clouds that give drops. The number of drops you get will be correctly displayed now.</li>
+					<li>Fixed title of document.</li>
+				</ul>
+				<h2>V. 0.1.10 beta</h2>
+				<ul>
+					<li>Changed function that checks whether helpers or upgrades can be bought. Should give a performance boost and less cpu usage.</li>
+					<li>Fixed bug with Heavy rain prayer that caused NaN drops.</li>
+					<li>Fixed popups of turbo. They now have the correct percentage of 30%.</li>
+					<li>Fixed wrath and turbo durations. They get doubled now as well.</li>
+					<li>Fixed offline progress with new started game after change in water level.</li>
+					<li>Fixed popup of Ocean milestone upgrades. They do not change with Alien tech perks anymore.</li>
+					<li>Made version number change with the main script so if versionnumber is latest you 're sure you have the latest script.</li>
+				</ul>
+				<h2>V. 0.1.9 beta</h2>
+				<ul>
+					<li>Fixed bug that allowed clouds to spawn very quickly.</li>
+					<li>Fixed draining of aliens during game play.</li>
+					<li>Fixed offline draining of aliens.</li>
+					<li>Fixed bug that sometimes kept drops per second at 7x after ending of storm.</li>
+					
+				</ul>
+				<h2>V. 0.1.8 beta</h2>
+				<ul>
+					<li>Fixed overpowered brain prayers. They now give 10%, 20% and 40% more power than they have without prayer. They give 10% * achievement percentage boost without prayer, and the bug added 10%, 20% and 40% making it doubling, tripling and 5 times as much.</li>
+					<li>Discount prayer images are changed to reflec 5% discount.</li>
+					<li>Buildings now become active when they should when prayer discount helper is selected</li>
+					<li>Removed "drops" after the number of hand made clicks in statistics.</li>
+					<li>Fixed alien drain bug that returned NaN.</li>
+					<li>Fixed unintentional unlocking of poseidon with know-how prestige.</li>
+					<li>Fixed bug that froze game when not valid save was loaded.</li>
+					<li>Mtn Eew % and Crazy scientists boost is visible in Mtn Eew popup.</li>
+					<li>Fixed bug that allowed autoclicker to sacrifice and get negative alount of helpers.</li>
+					<li>Fixed name Large H-O colider so it stays on one line.</li>
+				</ul>
+				<h2>V. 0.1.7 beta</h2>
+				<ul>
+					<li>Made sacrifice window and select prayer window draggable.</li>
+					<li>Added vertical responsive design.</li>
+					<li>Fixed know how upgrades, they all show up again.</li>
+					<li>Fixed buildings, they get inactive when you don't have enough drops even when button 100 is on.</li>
+					<li>Fixed text of sacrifices to Poseidon.</li>
+					<li>Fixed achievement images on popup.</li>
+				</ul>
+				<h2>V. 0.1.6 beta</h2>
+				<ul>
+					<li>Fixed bug where temple wasn't clickable in certain resolutions.</li>
+					<li>Fixed alien drain. Aliens drain now what they are supposed to drain: each 6% per alien draining. Dps drops only with 6% per alien.</li>
+					<li>Temple now remains after know how prestige, but sacrifices need to be done again.</li>
+					<li>Remaining active prayer after know how prestige fixed.</li>
+					<li>Fixed bug that let you buy an upgrade after sacrificing even if you didn't have enough drops in bank.</li>
+					<li>Added option to buy 100 helpers at once.</li>
+					<li>Added bank level indicator from bottom of the page. Does not indicate when cloud bonus reaches max, does indicate when banklevel bonus reaches max. Each percent waterlevel gives a percent of the drops per second extra.</li>
+					<li>Made prayers more worth their effort. Most prayers have double the power they had before.</li>
+					<li>Changed offline mechanics so you start off with 20% for 12 hours and get a lot more with the first few know how upgrades.</li>
+				</ul>
+				<h2>V. 0.1.5 beta</h2>
+				<ul>
+					<li>Put "Max cap" instead of number when cost is higher than possible capacity in temple building minigame.</li>
+					<li>Fixed alied drain percentage bugs when kon how perk adds a percentage.</li>
+					<li>Fixed Mtn Eew layer that can cover aliens, moved it a bit to the right and improved responsive design.</li>
+					<li>Added background for ocean level milestone upgrades and changed font-color.</li>
+					<li>Fixed tooltip position for prayers.</li>
+					<li>Fixed prayer images in Firefox.</li>
+					<li>Fixed problem of alien under bank label</li>
+					<li>Extended percentage of ocean level to 15 decimals.</li>
+					<li>Fixed bug temple reset after know how prestige.</li>
+					<li>Stopped Poseidon jumping when temples are built.</li>
+					<li>Fixed scientific long option for numbers to fixed number of decimals to stop shaking.</li>
+				</ul>
+				<h2>V. 0.1.4 beta</h2>
+				<ul>
+					<li>Fixed refreshing on skill tree bug.</li>
+					<li>Fixed alien bug with negative drain.</li>
+					<li>Fixed blurring (I hope) on hover and click in Poseidon building temples minigame.</li>
+					<li>Fixed description of spaceship quantity achievements.</li>
+					<li>Fixed bug in firefox where total upgrades and achievements was 0.</li>
+					<li>Fixed a few grammatical errors in "Build 1000 temples."</li>
+					<li>Fixed prestige lifeforms. They are linked to ocean level now.</li>
+				</ul>
+				<h2>V. 0.1.3 beta</h2>
+				<ul>
+					<li>Linked "life"-upgrades to ocean level. They only show up with enough drops in the ocean.</li>
+					<li>Added permament warning for "Fill ocean" button with option to choose how many drops go in the ocean.</li>
+					<li>Made the ocean level progressbar logarithmic instead of linear percentages.</li>
+					<li>The ocean upgrades that unlocked per percentage of ocean level now unlock on a logarithmic scale.</li>
+					<li>Fixed cost of spaceship upgrade "Bigger Spaceship"</li>
+					<li>Added popup that explains Mtn. Eew.</li>
+					<li>Grammatical corrections in upgrade descriptions.</li>
+					
+				</ul>
+				<h2>V. 0.1.2 beta</h2>
+				<ul>
+					<li>Added option to turn of spinning behind the big drop</li>
+					<li>Added option to get a warning when clicking on "Fill ocean"</li>
+					<li>Styled the scrollbars</li>
+					<li>Changed the responsive design so that more elements are visible.</li>
+					<li>Buying with auto-clicker made it possible to spend more than you had: fixed that.</li>
+					<li>Drops in ocean could get negative when there were negative drops in bank due to spending more than you had with auto-clicker: fixed that.</li>
+				</ul>
+				<h2>V. 0.1.1 beta</h2>
+				<ul>
+					<li>Offline progress added as know how upgrades that can be bought with experience.</li>
+				</ul>
+			</div>
+			<div id="sidebar">
+				<h2>Christoph Bielen</h2>
+				<p>Belgium</p>
+				<p>KBO nr. 0812.607.206</p>
+				<p>Contact: filltheoceans@gmail.com</p>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- responsive_1_filltheoceans -->
+				<ins class="adsbygoogle"
+					 style="display:block"
+					 data-ad-client="ca-pub-7150504416301667"
+					 data-ad-slot="2231097634"
+					 data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+			<div id="bottom"></div>
+
+		</div>
+	</body>
+</html>
