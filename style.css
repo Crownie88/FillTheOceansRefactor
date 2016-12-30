@@ -1157,6 +1157,20 @@ body {
 		user-select: none;
 		cursor:pointer;	
 	}
+
+	#sacrificeDiv.active{
+		background-color:#005588; 
+		-moz-box-shadow:inset 0 0 20px #00c0ff; 
+		-webkit-box-shadow: inset 0 0 20px #00c0ff; 
+		box-shadow:inset 0 0 20px #00c0ff;
+	}
+
+	#sacrificeDiv.inactive{
+		background-color:#002558;
+		-moz-box-shadow:inset 0 0 20px #0090cf;
+		-webkit-box-shadow:inset 0 0 20px #0090cf;
+		box-shadow:inset 0 0 20px #0090cf;
+	}
 	
 	#upgradeWeatherstationDiv{
 		width:95%; 
